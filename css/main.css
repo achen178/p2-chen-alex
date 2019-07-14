@@ -3,11 +3,7 @@
   padding: 0;
   border: 0;
 }
-body{
-  max-width: 1200px;
-  width: 90%;
-  margin: 0 auto;
-}
+
 /* -----------------------------------
 .............TYPOGRAPHY...............
 ----------------------------------- */
@@ -35,6 +31,7 @@ a{
 p{
   font-family: "Source Serif Pro", serif;
   font-size: 1.3rem;
+  margin: 1% 0;
 }
 .profile p{
   font-family: "Acumin Pro", sans-serif;
@@ -86,6 +83,20 @@ nav ul li{
 .active{
   color: var(--main-blue);
 }
+.flex-container img{
+  width: 40%;
+}
+.column{
+  background-color: var(--main-blue);
+  color: white;
+  padding: 10% 5%;
+}
+.column h2{
+  color: white;
+}
+.column p{
+  font-size: 1rem;
+}
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */
@@ -116,19 +127,39 @@ nav ul li{
 ----------------------------------- */
 footer{
   background-color: var(--main-blue);
+  padding: 5% 0 2% 0;
 }
 footer h2{
   display: inline-block;
   color: white;
 }
+footer h4{
+  margin: 0 0 1rem 0;
+}
+footer h4, footer li a{
+  font-family: "Acumin Pro", sans-serif;
+  text-transform: uppercase;
+  font-size: .8rem;
+  color: white;
+  letter-spacing: .2rem;
+}
+footer li{
+   margin: .3rem 0 0 0;
+}
 footer p{
   text-align: center;
+  font-size: .7rem;
+  color: white;
+}
+footer ul{
+  list-style: none;
+  margin: 5% 5%;
 }
 hr{
   height: 3px;
   background-color: white;
   width: 80%;
-  margin: auto;
+  margin: 3rem auto 0 auto;
 }
 .flex-container{
   display: flex;
@@ -149,6 +180,7 @@ hr{
   border-bottom: 5px solid var(--darker-green);
   font-size: 1rem;
   background-color: var(--main-green);
+  margin: 0 0 0 5rem;
 }
 .button a{
   display: inline-block;
@@ -171,3 +203,10 @@ hr{
 /* -----------------------------------
 ...........MEDIA QUERIES..............
 ----------------------------------- */
+@media (min-width:1350px){
+  body{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
