@@ -3,14 +3,64 @@
   padding: 0;
   border: 0;
 }
+body{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
 /* -----------------------------------
 .............TYPOGRAPHY...............
 ----------------------------------- */
-
+h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+a{
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--light-grey);
+}
+p{
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.3rem;
+}
 /*-----------------------------------
 ...............HEADER.................
 ----------------------------------- */
-
+header{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 0 0 10% 0;
+}
+#logo{
+  width: 30%;
+}
+nav{
+  width: 70%;
+  text-align: right;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: .5%;
+}
+nav ul{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3%;
+  transform: translateX(.6rem);
+}
+nav ul li{
+  list-style: none;
+  margin-left: 2rem;
+  letter-spacing: .6rem;
+  font-size: 1.1rem;
+}
+.active{
+  color: var(--main-blue);
+}
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */
@@ -22,7 +72,32 @@
 /* -----------------------------------
 ................MISC..................
 ----------------------------------- */
-
+.button{
+  padding: .9rem 2rem;
+  letter-spacing: .4rem;
+  border-radius: 7px;
+  border-bottom: 5px solid var(--darker-green);
+  font-size: 1rem;
+  background-color: var(--main-green);
+}
+.button a{
+  display: inline-block;
+  transform: translateX(.2rem);
+  color: white;
+}
+.button:active{
+  transform: translateY(2px);
+  border-bottom: 2px solid var(--darker-green);
+}
+:root {
+  --light-grey-bkgd: #f8f8f8;
+  --light-grey: #cbcbcb;
+  --main-green: #95d600;
+  --main-blue: #0082ca;
+  --main-teal: #1ccfc9;
+  --main-body: #375974;
+  --darker-green: #78ac5f;
+}
 /* -----------------------------------
 ...........MEDIA QUERIES..............
 ----------------------------------- */
