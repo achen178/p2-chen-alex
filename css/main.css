@@ -42,10 +42,28 @@ p{
   color: var(--main-body);
   margin: .4rem 0 0 0;
 }
-.team h2{
+.center-text{
   text-align: center;
   transform: translateX(.3rem);
-  margin: 0 0 10% 0;
+  margin: 0 0 8% 0;
+}
+.highlight-2{
+  color: var(--main-teal);
+}
+.blue-text{
+  color: var(--main-blue)
+}
+.column a{
+  letter-spacing: .4rem;
+}
+.column h2{
+  color: white;
+}
+.column p{
+  font-size: 1rem;
+}
+.column .home-p{
+  font-size: 1.4rem;
 }
 /*-----------------------------------
 ...............HEADER.................
@@ -56,51 +74,43 @@ header{
   justify-content: space-between;
   margin: 0 0 10% 0;
 }
+#desktop-nav{
+  display:none;
+}
+#mobile-nav{
+  display:none;
+}
 #logo{
   width: 30%;
+  height: auto;
 }
-nav{
-  width: 70%;
-  text-align: right;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-bottom: .5%;
+#hamburger{
+  height: 30px;
 }
-nav ul{
-  display: flex;
-  flex-direction: row-reverse;
-  margin-top: 3%;
-  transform: translateX(.6rem);
-}
-nav ul li{
-  list-style: none;
-  margin-left: 2rem;
-  letter-spacing: .6rem;
-  font-size: 1.1rem;
-}
-.active{
-  color: var(--main-blue);
-}
-.flex-container img{
-  width: 40%;
-}
-.column{
-  background-color: var(--main-blue);
-  color: white;
-  padding: 10% 5%;
-}
-.column h2{
-  color: white;
-}
-.column p{
-  font-size: 1rem;
-}
+
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */
-.icon{
+.flex-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.column{
+  background-color: var(--light-grey-bkgd);
+  color: var(--main-body);
+  width: 55%;
+  padding: 10% 5%;
+}
+.center-flex{
+  align-items: center;
+}
+#icon{
   width: 16px;
   transform: translateY(2px);
 }
@@ -117,10 +127,47 @@ nav ul li{
   margin: 0 0 1rem 0;
 }
 .grey-bk{
-  background-color: var(--light-grey-bkgd)
+  background-color: var(--light-grey-bkgd);
 }
-.team{
-  padding: 7% 0;
+.blue-bk{
+  background-color: var(--main-blue);
+}
+.blue-bk p{
+  color: white;
+}
+form{
+  width: 50%;
+  margin: 0 auto;
+}
+input,textarea{
+  width: 100%;
+  max-width: 100%;
+  padding: .5rem;
+  margin: 1rem 0;
+  background-color: #f2f2f2;
+  font-size: 1.3rem;
+  color: var(--main-body);
+  font-family: "Source Serif Pro", serif;
+}
+input::placeholder, textarea::placeholder{
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  color: var(--light-grey);
+  text-transform: uppercase;
+}
+.spaced{
+  margin: 0 0 15rem 0;
+}
+.img-container{
+  width: 45%;
+  position: relative;
+}
+.offset{
+  width: 300px;
+  position:absolute;
+  max-width: 300px;
+  right: 50%;;
 }
 /* -----------------------------------
 ...............FOOTER.................
@@ -144,7 +191,7 @@ footer h4, footer li a{
   letter-spacing: .2rem;
 }
 footer li{
-   margin: .3rem 0 0 0;
+  margin: .3rem 0 0 0;
 }
 footer p{
   text-align: center;
@@ -161,18 +208,17 @@ hr{
   width: 80%;
   margin: 3rem auto 0 auto;
 }
-.flex-container{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-.center-flex{
-  align-items: center;
+footer .button{
+  margin: 0 0 0 6rem;
 }
 /* -----------------------------------
 ................MISC..................
 ----------------------------------- */
 .button{
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
   display: inline-block;
   padding: .9rem 2rem;
   letter-spacing: .4rem;
@@ -180,7 +226,6 @@ hr{
   border-bottom: 5px solid var(--darker-green);
   font-size: 1rem;
   background-color: var(--main-green);
-  margin: 0 0 0 5rem;
 }
 .button a{
   display: inline-block;
@@ -203,6 +248,57 @@ hr{
 /* -----------------------------------
 ...........MEDIA QUERIES..............
 ----------------------------------- */
+@media (min-width:1000px){
+  #mobile-nav{
+    display:none;
+  }
+  #desktop-nav{
+    display:flex;
+  }
+  #hamburger{
+    display:none;
+  }
+  nav{
+    width: 70%;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: .5%;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 3%;
+    transform: translateX(.6rem);
+  }
+  nav ul li{
+    list-style: none;
+    margin-left: 2rem;
+    letter-spacing: .6rem;
+    font-size: 1.1rem;
+  }
+  nav ul li a{
+    transition: all .2s ease-in-out
+  }
+  nav ul li a:hover{
+    color: var(--main-teal)
+  }
+  .active{
+    color: var(--main-blue);
+  }
+  #dropdown{
+    position: relative;
+  }
+  #dropdown-content{
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    right: 0;
+    transition: all .5s ease-in-out;
+  }
+}
 @media (min-width:1350px){
   body{
     max-width: 1200px;

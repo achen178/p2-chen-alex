@@ -17,37 +17,69 @@
 <body>
   <header>
     <img src="imgs/logo.png" alt="Media Power Youth Logo" id="logo">
-    <nav>
+    <img id="hamburger" src="imgs/hamburger-menu.svg" alt="Menu Icon">
+    <nav id="mobile-nav">
       <div class="button">
         <a href="donate.html">DONATE</a>
       </div>
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
-        <li class="dropdown"><a href="about.html">About&nbsp;+</a></li>
+        <li id="dropdown"><a href="about.html">About&nbsp;+</a>
+          <div id="dropdown-content">
+            <a href="#">Partnerships</a>
+            <a href="#">Educators</a>
+          </div>
+        </li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="desktop-nav">
+      <div class="button">
+        <a href="donate.html">DONATE</a>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li id="dropdown"><a href="about.html">About&nbsp;+</a>
+          <div id="dropdown-content">
+            <a href="#">Partnerships</a>
+            <a href="#">Educators</a>
+          </div>
+        </li>
         <li><a href="community.html">Community</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section>
-      <img src="imgs/boy-on-tablet.png" alt="Boy Using a Tablet">
-      <p>Teach youth to make smart choices online — and off. Change the way kids think about & use the media.</p>
-      <a href="curriculum.html">Explore Curriculum <img src="imgs/play-button.svg" alt="Forward Arrow" class="icon"></a>
+    <section class="grey-bk flex-container spaced">
+      <div class="img-container">
+        <img class="offset" src="imgs/boy-on-tablet.png" alt="Boy Using a Tablet">
+      </div>
+      <div class="column">
+        <p class="home-p">Teach youth to make smart choices online — and off. Change the way kids think about & use the media.</p>
+        <a href="curriculum.html" class="highlight-2">Explore Curriculum<img src="imgs/play-button.svg" alt="Forward Arrow" id="icon"></a>
+      </div>
     </section>
-    <article>
-      <h2>What We Do</h2>
-      <img src="imgs/mother-daughter.jpg" alt="Boy Using a Tablet">
-      <p>Teach youth to make smart choices online — and off. Change the way kids think about & use the media.</p>
-      <a href="curriculum.html">Read More</a>
+    <article class="grey-bk flex-container">
+      <div class="column">
+        <h2><span class="blue-text">What We Do</span></h2>
+        <p class="home-p">In a world where media is a constant, we empower youth to make healthy choices about their behavior while teaching them to create a positive digital footprint.</p>
+        <a href="curriculum.html">Read More</a>
+      </div>
+      <div class="img-container">
+        <img class="offset" src="imgs/mother-daughter.jpg" alt="Girl Using a Tablet">
+      </div>
     </article>
   </main>
   <footer>
-    <div class="flex-container center-flex offset">
+    <div class="flex-container center-flex">
       <h2>Support Us!</h2>
-      <div class="button">
-        <a href="donate.html">DONATE</a>
-      </div>
+      <a href="#">
+        <div class="button">
+          DONATE
+        </div>
+      </a>
     </div>
     <hr>
     <div class="flex-container">
@@ -55,7 +87,7 @@
         <li>
           <h4>Company</h4>
         </li>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="careers.html">Careers</a></li>
       </ul>
       <ul>
@@ -85,9 +117,9 @@
       </ul>
     </div>
     <p>©2019 Media Power Youth. All Rights Reserved.
-      <br>1245 Elm Street Manchester, NH 03101
-    </p>
+      <br>1245 Elm Street Manchester, NH 03101</p>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 
   </html>
