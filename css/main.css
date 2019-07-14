@@ -71,9 +71,13 @@ p{
 }
 .column p{
   font-size: 1rem;
+  text-align: left;
 }
 .column .home-p{
   font-size: 1.4rem;
+}
+.team{
+  padding: 7rem 0;
 }
 #random{
   width: 80%;
@@ -151,7 +155,7 @@ header{
 }
 form{
   width: 50%;
-  margin: 0 auto;
+  margin: 7rem auto;
 }
 input,textarea{
   width: 100%;
@@ -176,6 +180,9 @@ input::placeholder, textarea::placeholder{
 .img-container{
   width: 45%;
   position: relative;
+}
+.flex-img{
+  width: 45%;
 }
 .offset{
   width: 90%;
