@@ -13,7 +13,18 @@ body{
 ----------------------------------- */
 h2{
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  color: var(--main-blue);
+}
+h3{
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .4rem;
+  transform: translateX(.2rem);
+  color: var(--main-blue);
 }
 a{
   font-family: "Poppins", sans-serif;
@@ -24,6 +35,20 @@ a{
 p{
   font-family: "Source Serif Pro", serif;
   font-size: 1.3rem;
+}
+.profile p{
+  font-family: "Acumin Pro", sans-serif;
+  font-size: .7rem;
+  letter-spacing: .1rem;
+  transform: translateX(.05rem);
+  text-transform: uppercase;
+  color: var(--main-body);
+  margin: .4rem 0 0 0;
+}
+.team h2{
+  text-align: center;
+  transform: translateX(.3rem);
+  margin: 0 0 10% 0;
 }
 /*-----------------------------------
 ...............HEADER.................
@@ -64,15 +89,60 @@ nav ul li{
 /* -----------------------------------
 ...............BODY...................
 ----------------------------------- */
-
+.icon{
+  width: 16px;
+  transform: translateY(2px);
+}
+.profile{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.profile img{
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 0 1rem 0;
+}
+.grey-bk{
+  background-color: var(--light-grey-bkgd)
+}
+.team{
+  padding: 7% 0;
+}
 /* -----------------------------------
 ...............FOOTER.................
 ----------------------------------- */
-
+footer{
+  background-color: var(--main-blue);
+}
+footer h2{
+  display: inline-block;
+  color: white;
+}
+footer p{
+  text-align: center;
+}
+hr{
+  height: 3px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+}
+.flex-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.center-flex{
+  align-items: center;
+}
 /* -----------------------------------
 ................MISC..................
 ----------------------------------- */
 .button{
+  display: inline-block;
   padding: .9rem 2rem;
   letter-spacing: .4rem;
   border-radius: 7px;
