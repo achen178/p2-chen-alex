@@ -7,6 +7,14 @@
 /* -----------------------------------
 .............TYPOGRAPHY...............
 ----------------------------------- */
+h1{
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  color: var(--main-blue);
+  text-align: center;
+}
 h2{
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
@@ -32,6 +40,8 @@ p{
   font-family: "Source Serif Pro", serif;
   font-size: 1.3rem;
   margin: 1% 0;
+  text-align: center;
+  color: var(--main-body)
 }
 .profile p{
   font-family: "Acumin Pro", sans-serif;
@@ -64,6 +74,10 @@ p{
 }
 .column .home-p{
   font-size: 1.4rem;
+}
+#random{
+  width: 80%;
+  margin: 5rem 0 10rem 0;
 }
 /*-----------------------------------
 ...............HEADER.................
@@ -164,10 +178,11 @@ input::placeholder, textarea::placeholder{
   position: relative;
 }
 .offset{
-  width: 300px;
+  width: 90%;
   position:absolute;
   max-width: 300px;
-  right: 50%;;
+  right: 50%;
+  transform: translate(50%, -18%);
 }
 /* -----------------------------------
 ...............FOOTER.................

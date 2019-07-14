@@ -17,15 +17,37 @@
 <body>
   <header>
     <img src="imgs/logo.png" alt="Media Power Youth Logo" id="logo">
-    <nav>
+    <img id="hamburger" src="imgs/hamburger-menu.svg" alt="Menu Icon">
+    <nav id="mobile-nav">
       <div class="button">
-        <a href="donate.html">DONATE</a>
+        <a href="404.html">DONATE</a>
       </div>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown"><a href="about.html">About&nbsp;+</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li id="dropdown"><a href="about.html">About&nbsp;+</a>
+          <div id="dropdown-content">
+            <a href="#">Partnerships</a>
+            <a href="#">Educators</a>
+          </div>
+        </li>
+        <li><a href="404.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <nav id="desktop-nav">
+      <div class="button">
+        <a href="404.html">DONATE</a>
+      </div>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li id="dropdown"><a href="about.html">About&nbsp;+</a>
+          <div id="dropdown-content">
+            <a href="#">Partnerships</a>
+            <a href="#">Educators</a>
+          </div>
+        </li>
+        <li><a href="404.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -56,14 +78,14 @@
           <h4>Company</h4>
         </li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="careers.html">Careers</a></li>
+        <li><a href="404.html">Careers</a></li>
       </ul>
       <ul>
         <li>
           <h4>About</h4>
         </li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="404.html">Blog</a></li>
 
       </ul>
       <ul>
@@ -71,9 +93,9 @@
           <h4>Help</h4>
         </li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="policy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms of Service</a></li>
-        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="404.html">Privacy Policy</a></li>
+        <li><a href="404.html">Terms of Service</a></li>
+        <li><a href="404.html">FAQ</a></li>
       </ul>
       <ul>
         <li>
@@ -87,6 +109,7 @@
     <p>©2019 Media Power Youth. All Rights Reserved.
       <br>1245 Elm Street Manchester, NH 03101</p>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 
   </html>
