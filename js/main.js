@@ -1,3 +1,4 @@
+// Dropdown Menu
 var dropdown = document.getElementById('dropdown');
 var content = document.getElementById('dropdown-content');
 
@@ -11,11 +12,35 @@ dropdown.addEventListener("mouseout", function() {
   content.style.height = "0"
 });
 
+// Scroll to top button
+var button = document.getElementById('myBtn');
+console.log(button);
+window.onscroll = function() {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+};
+
+button.addEventListener("click", function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+
+
+// API for puppy picture
 var randomImage = document.getElementById('random');
 var attribution = document.getElementById("attribution")
 
-randomImage.src = "https://source.unsplash.com/1600x900/?puppy"
-randomImage.alt = "puppy"
+randomImage.src = "https://source.unsplash.com/1600x900/?puppy";
+randomImage.alt = "puppy";
+
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
